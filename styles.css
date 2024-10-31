@@ -74,3 +74,21 @@ button.next {
     font-size: 14px; /* 根据需要调整字体大小 */  
     color: #333; /* 根据需要调整文字颜色 */  
 }
+
+/* 媒体查询：针对小屏幕设备（如手机） */  
+@media (max-width: 600px) {  
+    .carousel-container {  
+        border-radius: 5px; /* 在小屏幕上减小圆角 */  
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 在小屏幕上减小阴影 */  
+    }  
+  
+    .prev, .next {  
+        padding: 5px; /* 在小屏幕上减小按钮大小 */  
+        font-size: 14px; /* 在小屏幕上减小按钮文字大小 */  
+    }  
+  
+    .footer-text {  
+        font-size: 14px; /* 在小屏幕上减小文字大小 */  
+        padding: 10px; /* 在小屏幕上减小内边距 */  
+    }  
+}
