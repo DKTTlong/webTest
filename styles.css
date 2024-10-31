@@ -92,3 +92,27 @@ button.next {
         padding: 10px; /* 在小屏幕上减小内边距 */  
     }  
 }
+
+/* 底图与文字容器 */  
+.background-with-text {  
+    position: relative; /* 需要相对定位以便内部绝对定位的元素能够正确显示 */  
+    width: 100%;  
+    height: 200px; /* 根据需要调整高度 */  
+    background-image: url('image/buttom.jpg'); /* 替换为您的背景图像路径 */  
+    background-size: cover; /* 使背景图像覆盖整个容器 */  
+    background-position: center; /* 将背景图像居中显示 */  
+    margin-top: 20px; /* 添加一些上边距以与前面的内容分隔 */  
+}  
+  
+/* 文字覆盖层 */  
+.text-overlay {  
+    position: absolute; /* 绝对定位以覆盖在底图上 */  
+    top: 50%; /* 将文字的垂直位置设为容器高度的50% */  
+    left: 50%; /* 将文字的水平位置设为容器宽度的50% */  
+    transform: translate(-50%, -50%); /* 使用transform属性将文字居中于容器内 */  
+    color: white; /* 根据背景图像调整文字颜色以确保可读性 */  
+    font-size: 18px; /* 根据需要调整字体大小 */  
+    text-align: center; /* 文字居中显示 */  
+    width: 100%; /* 可选：如果文字内容较长，可以限制宽度并添加左右内边距 */  
+    padding: 0 20px; /* 可选：添加左右内边距 */  
+}  
