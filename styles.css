@@ -1,0 +1,76 @@
+body {  
+    font-family: Arial, sans-serif;  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+    margin: 0;  
+    background-color: #f0f0f0;  
+}  
+
+.header-image {  
+    width: 100%;  
+    max-width: 2000px; /* 或者你想要的任何宽度 */  
+    margin: 5px auto; /* 添加一些上下外边距，并水平居中 */  
+    text-align: center; /* 确保图片居中（虽然对于块级元素img这不是必需的，但可以作为保险措施） */  
+}  
+  
+.header-image img {  
+    width: 100%; /* 使图片宽度适应容器 */  
+    height: auto; /* 保持图片的纵横比 */  
+    display: block; /* 移除图片底部的间隙 */  
+}
+
+.carousel-container {  
+    position: relative;  
+    width: 100%;  
+    max-width: 1200px;  
+    overflow: hidden;  
+    border-radius: 10px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}  
+  
+.carousel {  
+    display: flex;  
+    transition: transform 0.5s ease-in-out;  
+}  
+  
+.carousel-slide {  
+    min-width: 100%;  
+    box-sizing: border-box;  
+}  
+  
+.carousel-slide img {  
+    width: 100%;  
+    display: block;  
+}  
+  
+button {  
+    position: absolute;  
+    top: 50%;  
+    transform: translateY(-50%);  
+    background-color: rgba(0, 0, 0, 0.5);  
+    color: white;  
+    border: none;  
+    padding: 10px;  
+    cursor: pointer;  
+    z-index: 10;  
+    border-radius: 50%;  
+}  
+  
+button.prev {  
+    left: 10px;  
+}  
+  
+button.next {  
+    right: 10px;  
+}
+
+/* 底部文字样式 */  
+.footer-text {  
+    width: 80%; /* 与轮播图容器宽度一致或根据需要调整 */  
+    max-width: 600px; /* 确保与标题图片和轮播图的最大宽度一致 */  
+    margin: 20px auto; /* 添加一些上下外边距，并水平居中 */  
+    text-align: center; /* 文字居中显示 */  
+    font-size: 14px; /* 根据需要调整字体大小 */  
+    color: #333; /* 根据需要调整文字颜色 */  
+}
