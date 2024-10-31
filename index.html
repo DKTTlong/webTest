@@ -11,20 +11,36 @@
     <div class="header-image">  
         <img src="image/header.jpg" alt="标题图片">  
     </div>  
-    <div class="carousel-container">  
+    <!-- <div class="carousel-container">   -->
+        <!-- <div class="carousel">   -->
+            <!-- <div class="carousel-slide">   -->
+                <!-- <img src="image/1.jpg" alt="图片1">   -->
+            <!-- </div>   -->
+            <!-- <div class="carousel-slide">   -->
+                <!-- <img src="image/2.jpg" alt="图片2">   -->
+            <!-- </div>   -->
+            <!-- <div class="carousel-slide">   -->
+                <!-- <img src="image/3.jpg" alt="图片3">   -->
+            <!-- </div>   -->
+        <!-- </div>   -->
+        <!-- <button class="prev" onclick="prevSlide()">&#10094;</button>   -->
+        <!-- <button class="next" onclick="nextSlide()">&#10095;</button>   -->
+    <!-- </div>   -->
+	<div class="carousel-container">  
         <div class="carousel">  
-            <div class="carousel-slide">  
-                <img src="image/1.jpg" alt="图片1">  
-            </div>  
-            <div class="carousel-slide">  
-                <img src="image/2.jpg" alt="图片2">  
-            </div>  
-            <div class="carousel-slide">  
-                <img src="image/3.jpg" alt="图片3">  
-            </div>  
+            <div class="carousel-slide current" style="background-image: url('image/1.jpg');"></div>  
+            <div class="carousel-slide" style="background-image: url('image/2.jpg');"></div>  
+            <div class="carousel-slide" style="background-image: url('image/3.jpg');"></div>  
+            <!-- 继续添加更多图片 -->  
         </div>  
         <button class="prev" onclick="prevSlide()">&#10094;</button>  
         <button class="next" onclick="nextSlide()">&#10095;</button>  
+    </div>  
+    <div class="thumbnail-container">  
+        <div class="thumbnail current" style="background-image: url('image/1_thumb.jpg');"></div>  
+        <div class="thumbnail" style="background-image: url('image/2_thumb.jpg');"></div>  
+        <div class="thumbnail" style="background-image: url('image/3_thumb.jpg');"></div>  
+        <!-- 继续添加更多缩略图 -->  
     </div>  
 	<!-- 底部文字部分 -->  
     <div class="footer-text">  
