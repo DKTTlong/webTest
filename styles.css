@@ -75,24 +75,6 @@ button.next {
     color: #333; /* 根据需要调整文字颜色 */  
 }
 
-/* 媒体查询：针对小屏幕设备（如手机） */  
-@media (max-width: 600px) {  
-    .carousel-container {  
-        border-radius: 5px; /* 在小屏幕上减小圆角 */  
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 在小屏幕上减小阴影 */  
-    }  
-  
-    .prev, .next {  
-        padding: 5px; /* 在小屏幕上减小按钮大小 */  
-        font-size: 14px; /* 在小屏幕上减小按钮文字大小 */  
-    }  
-  
-    .footer-text {  
-        font-size: 14px; /* 在小屏幕上减小文字大小 */  
-        padding: 10px; /* 在小屏幕上减小内边距 */  
-    }  
-}
-
 /* 底图与文字容器 */  
 .background-with-text {  
     position: relative; /* 需要相对定位以便内部绝对定位的元素能够正确显示 */  
@@ -116,3 +98,21 @@ button.next {
     width: 100%; /* 可选：如果文字内容较长，可以限制宽度并添加左右内边距 */  
     padding: 0 20px; /* 可选：添加左右内边距 */  
 }  
+
+/* 媒体查询：针对小屏幕设备（如手机） */  
+@media (max-width: 600px) {  
+    .carousel-container {  
+        border-radius: 5px; /* 在小屏幕上减小圆角 */  
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 在小屏幕上减小阴影 */  
+    }  
+  
+    .prev, .next {  
+        padding: 5px; /* 在小屏幕上减小按钮大小 */  
+        font-size: 14px; /* 在小屏幕上减小按钮文字大小 */  
+    }  
+  
+    .footer-text {  
+        font-size: 14px; /* 在小屏幕上减小文字大小 */  
+        padding: 10px; /* 在小屏幕上减小内边距 */  
+    }  
+}
