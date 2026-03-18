@@ -1,57 +1,351 @@
-<!DOCTYPE html>  
-<html lang="zh-CN">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>指点时代游戏官网</title>  
-    <link rel="stylesheet" href="styles.css">  
-</head>  
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成都指点时代 - 专注手机游戏研发</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
 <body>
-	 <!-- 标题图片部分 -->  
-    <div class="header-image">  
-        <img src="image/header.jpg" alt="标题图片">  
-    </div>  
-    <!-- <div class="carousel-container">   -->
-        <!-- <div class="carousel">   -->
-            <!-- <div class="carousel-slide">   -->
-                <!-- <img src="image/1.jpg" alt="图片1">   -->
-            <!-- </div>   -->
-            <!-- <div class="carousel-slide">   -->
-                <!-- <img src="image/2.jpg" alt="图片2">   -->
-            <!-- </div>   -->
-            <!-- <div class="carousel-slide">   -->
-                <!-- <img src="image/3.jpg" alt="图片3">   -->
-            <!-- </div>   -->
-        <!-- </div>   -->
-        <!-- <button class="prev" onclick="prevSlide()">&#10094;</button>   -->
-        <!-- <button class="next" onclick="nextSlide()">&#10095;</button>   -->
-    <!-- </div>   -->
-	<div class="carousel-container">  
-        <div class="carousel">  
-            <div class="carousel-slide current" style="background-image: url('image/1.jpg');"></div>  
-            <div class="carousel-slide" style="background-image: url('image/2.jpg');"></div>  
-            <div class="carousel-slide" style="background-image: url('image/3.jpg');"></div>  
-            <!-- 继续添加更多图片 -->  
-        </div>  
-        <button class="prev" onclick="prevSlide()">&#10094;</button>  
-        <button class="next" onclick="nextSlide()">&#10095;</button>  
-    </div>  
-    <div class="thumbnail-container">  
-        <div class="thumbnail current" onclick="showSlide(0)" style="background-image: url('image/1_thumb.jpg');"></div>  
-        <div class="thumbnail" onclick="showSlide(1)" style="background-image: url('image/2_thumb.jpg');"></div>  
-        <div class="thumbnail" onclick="showSlide(2)" style="background-image: url('image/3_thumb.jpg');"></div>  
-        <!-- 继续添加更多缩略图 -->  
-    </div>  
-	<!-- 底部文字部分 -->  
-    <div class="footer-text">  
-        <p>健康游戏忠告：抵制不良游戏   拒绝盗版游戏   注意自我保护   谨防受骗上当   适度游戏益脑   沉迷游戏伤身   合理安排时间   享受健康生活</p>  
-    </div> 
-	<!-- 底图与文字部分 -->  
-    <div class="background-with-text">  
-        <div class="text-overlay">  
-            <p>Copyright© 2004-2024 指点时代游戏</p>  
-        </div>  
-    </div>  
-    <script src="scripts.js"></script>  
-</body>  
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="fas fa-gamepad"></i></span>
+                <span class="logo-text">成都指点时代</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#about" class="nav-link">关于我们</a></li>
+                <li><a href="#products" class="nav-link">产品服务</a></li>
+                <li><a href="#contact" class="nav-link">联系我们</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页英雄区 -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">创造无限可能的游戏世界</h1>
+            <p class="hero-subtitle">成都指点时代，专注于精品手机游戏的研发与运营</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">探索游戏</a>
+                <a href="#about" class="btn btn-secondary">了解更多</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">关于我们</span>
+                <h2 class="section-title">用心创造，乐在其中</h2>
+                <p class="section-desc">我们是一支充满激情的游戏研发团队，致力于为玩家带来最优质的游戏体验</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>我们的使命</h3>
+                    <p>通过创新游戏设计和精湛技术，为全球玩家创造令人难忘的游戏体验，让快乐触手可及。</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>我们的愿景</h3>
+                    <p>成为中国领先的移动游戏研发商，打造世界级游戏品牌，让"指点时代"成为品质与创新的代名词。</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>核心价值观</h3>
+                    <p>用户至上、创新为魂、团队协作、追求卓越。我们相信好游戏源于对细节的执着和对玩家的尊重。</p>
+                </div>
+            </div>
+
+            <div class="stats-section">
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">精品游戏</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1亿+</span>
+                    <span class="stat-label">累计用户</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">8年</span>
+                    <span class="stat-label">行业深耕</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">200+</span>
+                    <span class="stat-label">专业团队</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品服务 -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">产品服务</span>
+                <h2 class="section-title">精品游戏，匠心打造</h2>
+                <p class="section-desc">从休闲益智到策略竞技，我们覆盖多个游戏品类，满足不同玩家的需求</p>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="休闲益智">
+                        <div class="product-overlay">
+                            <span class="product-tag">热门</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>休闲益智</h3>
+                        <p>轻松上手，随时随地享受游戏乐趣，适合全年龄段玩家。</p>
+                        <div class="product-meta">
+                            <span><i class="fas fa-download"></i> 5000万+</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&h=300&fit=crop" alt="策略竞技">
+                        <div class="product-overlay">
+                            <span class="product-tag">新品</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>策略竞技</h3>
+                        <p>深度策略玩法，公平竞技环境，考验智慧与操作的完美结合。</p>
+                        <div class="product-meta">
+                            <span><i class="fas fa-download"></i> 3000万+</span>
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=400&h=300&fit=crop" alt="角色扮演">
+                        <div class="product-overlay">
+                            <span class="product-tag">经典</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>角色扮演</h3>
+                        <p>沉浸式剧情体验，精美画面呈现，开启属于你的冒险之旅。</p>
+                        <div class="product-meta">
+                            <span><i class="fas fa-download"></i> 2000万+</span>
+                            <span><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&h=300&fit=crop" alt="卡牌对战">
+                        <div class="product-overlay">
+                            <span class="product-tag">推荐</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>卡牌对战</h3>
+                        <p>丰富卡牌组合，策略深度无限，与全球玩家一较高下。</p>
+                        <div class="product-meta">
+                            <span><i class="fas fa-download"></i> 1500万+</span>
+                            <span><i class="fas fa-star"></i> 4.6</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services-section">
+                <h3 class="services-title">我们的服务</h3>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>游戏研发</span>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-globe"></i>
+                        <span>全球发行</span>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-chart-line"></i>
+                        <span>数据分析</span>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-headset"></i>
+                        <span>运营支持</span>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <span>美术设计</span>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-code"></i>
+                        <span>技术咨询</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">联系我们</span>
+                <h2 class="section-title">期待与您合作</h2>
+                <p class="section-desc">无论是商务合作还是玩家反馈，我们随时欢迎您的联系</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h4>公司地址</h4>
+                            <p>四川省成都市高新区天府软件园<br>创新大厦 A座 15楼</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h4>联系电话</h4>
+                            <p>028-8888-8888</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h4>电子邮箱</h4>
+                            <p>contact@zhidianshidai.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h4>工作时间</h4>
+                            <p>周一至周五 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">您的姓名</label>
+                            <input type="text" id="name" name="name" placeholder="请输入您的姓名" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">电子邮箱</label>
+                            <input type="email" id="email" name="email" placeholder="请输入您的邮箱" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">咨询主题</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">请选择咨询主题</option>
+                                <option value="business">商务合作</option>
+                                <option value="game">游戏反馈</option>
+                                <option value="job">人才招聘</option>
+                                <option value="other">其他咨询</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">留言内容</label>
+                            <textarea id="message" name="message" rows="4" placeholder="请输入您的留言内容" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> 发送留言
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <i class="fas fa-gamepad"></i>
+                        <span>成都指点时代</span>
+                    </a>
+                    <p class="footer-desc">专注手机游戏研发，创造无限可能的游戏世界</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-weixin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-weibo"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-qq"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>快速导航</h4>
+                        <ul>
+                            <li><a href="#home">首页</a></li>
+                            <li><a href="#about">关于我们</a></li>
+                            <li><a href="#products">产品服务</a></li>
+                            <li><a href="#contact">联系我们</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>产品类型</h4>
+                        <ul>
+                            <li><a href="#">休闲益智</a></li>
+                            <li><a href="#">策略竞技</a></li>
+                            <li><a href="#">角色扮演</a></li>
+                            <li><a href="#">卡牌对战</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>支持服务</h4>
+                        <ul>
+                            <li><a href="#">帮助中心</a></li>
+                            <li><a href="#">用户协议</a></li>
+                            <li><a href="#">隐私政策</a></li>
+                            <li><a href="#">防沉迷系统</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 成都指点时代科技有限公司 版权所有 | 蜀ICP备XXXXXXXX号</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
